@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   inkscape:export-filename="C:\Documents and Settings\Wairton\Desktop\grafo\img\path2816.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   sodipodi:docname="icones.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3621">
+      <stop
+         style="stop-color:#009b00;stop-opacity:1;"
+         offset="0"
+         id="stop3623" />
+      <stop
+         style="stop-color:#009b00;stop-opacity:0;"
+         offset="1"
+         id="stop3625" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3621"
+       id="linearGradient3627"
+       x1="142.40039"
+       y1="708.1825"
+       x2="176.15039"
+       y2="708.1825"
+       gradientUnits="userSpaceOnUse" />
+    <inkscape:perspective
+       id="perspective3628"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3656"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="217.03125"
+     inkscape:cy="387.07908"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="660"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.99190285;fill:#66e65b;fill-opacity:1;stroke:#009b00;stroke-width:11.39999962;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path2816"
+       sodipodi:cx="378.57144"
+       sodipodi:cy="508.07648"
+       sodipodi:rx="147.14285"
+       sodipodi:ry="141.42857"
+       d="m 525.71429,508.07648 a 147.14285,141.42857 0 1 1 -294.2857,0 147.14285,141.42857 0 1 1 294.2857,0 z"
+       transform="matrix(0.13075582,0,0,0.13603888,262.72825,589.48689)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Documents and Settings\Wairton\Desktop\grafo\img\novo.png" />
+    <path
+       sodipodi:type="arc"
+       id="path3610"
+       style="fill:#000000;stroke:none"
+       sodipodi:cx="66.5"
+       sodipodi:cy="658.61218"
+       sodipodi:rx="1.5"
+       sodipodi:ry="1.5"
+       d="m 68,658.61218 a 1.5,1.5 0 1 1 -3,0 1.5,1.5 0 1 1 3,0 z" />
+    <path
+       style="fill:#66e65b;fill-opacity:1;stroke:#009b00;stroke-width:1.08112741;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 63.608478,628.25934 97.023265,601.02202"
+       id="path3618"
+       inkscape:export-filename="C:\Documents and Settings\Wairton\Desktop\grafo\img\vertice.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="star"
+       style="opacity:0.99190285;fill:#66e65b;fill-opacity:1;stroke:#009b00;stroke-width:1.54999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3626"
+       sodipodi:sides="3"
+       sodipodi:cx="215.5"
+       sodipodi:cy="639.86218"
+       sodipodi:r1="6.0104079"
+       sodipodi:r2="6.1218047"
+       sodipodi:arg1="-2.8461518"
+       sodipodi:arg2="-2.8473994"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 209.75,638.11218 -0.10879,-0.0251 10.24933,-2.32952 0.0762,-0.0816 -3.10724,10.04094 0.0326,0.10678 -7.14209,-7.71143 z"
+       transform="matrix(0.73748836,0.03243675,-0.03137932,0.7623392,-39.789515,104.99892)"
+       inkscape:export-filename="C:\Documents and Settings\Wairton\Desktop\grafo\img\vertice.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="star"
+       style="opacity:0.99190285;fill:#66e65b;fill-opacity:1;stroke:#009b00;stroke-width:1.54999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3628"
+       sodipodi:sides="3"
+       sodipodi:cx="181.75"
+       sodipodi:cy="606.86218"
+       sodipodi:r1="10.784827"
+       sodipodi:r2="5.4609232"
+       sodipodi:arg1="2.3398025"
+       sodipodi:arg2="3.0486157"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 174.25,614.61218 2.06266,-7.24299 2.47564,-10.8772 5.24129,5.40782 8.18211,7.58256 -7.30395,1.83518 -10.65775,3.29463 z"
+       transform="matrix(0.66956812,0.1878993,-0.18762484,0.67054755,167.90463,185.26451)"
+       inkscape:export-filename="C:\Documents and Settings\Wairton\Desktop\grafo\img\mover.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="matrix(0.15338733,0.67922279,-0.67823069,0.1536117,559.91152,433.57817)"
+       d="m 174.25,614.61218 2.06266,-7.24299 2.47564,-10.8772 5.24129,5.40782 8.18211,7.58256 -7.30395,1.83518 -10.65775,3.29463 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="false"
+       sodipodi:arg2="3.0486157"
+       sodipodi:arg1="2.3398025"
+       sodipodi:r2="5.4609232"
+       sodipodi:r1="10.784827"
+       sodipodi:cy="606.86218"
+       sodipodi:cx="181.75"
+       sodipodi:sides="3"
+       id="path3632"
+       style="opacity:0.99190285;fill:#66e65b;fill-opacity:1;stroke:#009b00;stroke-width:1.54999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="star"
+       inkscape:export-filename="C:\Documents and Settings\Wairton\Desktop\grafo\img\mover.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="star"
+       style="opacity:0.99190285;fill:#66e65b;fill-opacity:1;stroke:#009b00;stroke-width:1.54999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3634"
+       sodipodi:sides="3"
+       sodipodi:cx="181.75"
+       sodipodi:cy="606.86218"
+       sodipodi:r1="10.784827"
+       sodipodi:r2="5.4609232"
+       sodipodi:arg1="2.3398025"
+       sodipodi:arg2="3.0486157"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 174.25,614.61218 2.06266,-7.24299 2.47564,-10.8772 5.24129,5.40782 8.18211,7.58256 -7.30395,1.83518 -10.65775,3.29463 z"
+       transform="matrix(-0.20083315,0.66669942,-0.66572562,-0.20112693,628.3093,639.41362)"
+       inkscape:export-filename="C:\Documents and Settings\Wairton\Desktop\grafo\img\mover.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="matrix(0.18441503,-0.67144001,0.67045927,0.18468479,-276.51356,648.55123)"
+       d="m 174.25,614.61218 2.06266,-7.24299 2.47564,-10.8772 5.24129,5.40782 8.18211,7.58256 -7.30395,1.83518 -10.65775,3.29463 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="false"
+       sodipodi:arg2="3.0486157"
+       sodipodi:arg1="2.3398025"
+       sodipodi:r2="5.4609232"
+       sodipodi:r1="10.784827"
+       sodipodi:cy="606.86218"
+       sodipodi:cx="181.75"
+       sodipodi:sides="3"
+       id="path3636"
+       style="opacity:0.99190285;fill:#66e65b;fill-opacity:1;stroke:#009b00;stroke-width:1.54999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="star"
+       inkscape:export-filename="C:\Documents and Settings\Wairton\Desktop\grafo\img\mover.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:36.36301804px;font-style:normal;font-weight:normal;fill:#009c00;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="77.658913"
+       y="710.6217"
+       id="text3638"
+       transform="scale(1.0664325,0.9377059)"
+       inkscape:export-filename="C:\Documents and Settings\Wairton\Desktop\grafo\img\smile.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3640"
+         x="77.658913"
+         y="710.6217">=)</tspan></text>
+    <path
+       inkscape:export-filename="C:\Documents and Settings\Wairton\Desktop\grafo\img\novo.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       transform="matrix(0.13075582,0,0,0.13603888,212.97825,573.23689)"
+       d="m 525.71429,508.07648 a 147.14285,141.42857 0 1 1 -294.2857,0 147.14285,141.42857 0 1 1 294.2857,0 z"
+       sodipodi:ry="141.42857"
+       sodipodi:rx="147.14285"
+       sodipodi:cy="508.07648"
+       sodipodi:cx="378.57144"
+       id="path3642"
+       style="opacity:0.99190285;fill:#e4685b;fill-opacity:1;stroke:#9b0000;stroke-width:11.39999962;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc" />
+    <path
+       style="fill:none;stroke:#a00000;stroke-width:1.09764493px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 268.14083,635.72135 10.53399,-11.90242"
+       id="path3660" />
+    <path
+       style="fill:none;stroke:#a00000;stroke-width:1.01326966px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 279.74339,636.10555 267.75663,623.77674"
+       id="path3662" />
+    <path
+       style="fill:none;stroke:#009b00;stroke-width:2.01354313;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 120.8546,630.63013 150.84106,601.4276"
+       id="path3664"
+       inkscape:export-filename="C:\Documents and Settings\Wairton\Desktop\grafo\img\remover.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       id="path3668"
+       d="M 150.4491,631.0221 121.24657,601.03564"
+       style="fill:none;stroke:#009b00;stroke-width:2.01354313;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="C:\Documents and Settings\Wairton\Desktop\grafo\img\remover.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:26.14715195px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#00cd00;fill-opacity:1;stroke:#009b00;stroke-width:1.45262039;stroke-opacity:1;font-family:Berlin Sans FB;-inkscape-font-specification:Berlin Sans FB"
+       x="18.681898"
+       y="656.3147"
+       id="text3599"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="W:\DropBox\Dropbox\grafos\grafo\img\bfs.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3601"
+         x="18.681898"
+         y="656.3147"
+         style="stroke-width:1.45262039">bfs</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:25.74181747px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#00cd00;fill-opacity:1;stroke:#009b00;stroke-width:1.43010283;stroke-opacity:1;font-family:Berlin Sans FB;-inkscape-font-specification:Berlin Sans FB"
+       x="21.310061"
+       y="690.80273"
+       id="text3603"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="W:\DropBox\Dropbox\grafos\grafo\img\dfs.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3605"
+         x="21.310061"
+         y="690.80273"
+         style="stroke-width:1.43010283">dfs</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:39.74697876px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#00ca00;fill-opacity:1;stroke:#009b00;stroke-width:2.20816588;stroke-opacity:1;font-family:Berlin Sans FB;-inkscape-font-specification:Berlin Sans FB"
+       x="87.111664"
+       y="713.4707"
+       id="text2831"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="W:\DropBox\Dropbox\grafos\grafo\img\exclama.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2833"
+         x="87.111664"
+         y="713.4707"
+         style="stroke-width:2.20816588">!</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12.41274643px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#00ca00;fill-opacity:1;stroke:#009b00;stroke-width:0.68959713;stroke-opacity:1;font-family:Berlin Sans FB;-inkscape-font-specification:Berlin Sans FB"
+       x="143.55203"
+       y="683.11359"
+       id="text2833"
+       sodipodi:linespacing="125%"
+       transform="scale(0.98317,1.0171181)"
+       inkscape:export-filename="W:\DropBox\Dropbox\grafos\grafo\img\agmprim.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2835"
+         x="143.55203"
+         y="683.11359"
+         style="stroke:#009b00;stroke-width:0.68959713;stroke-opacity:1" /><tspan
+         sodipodi:role="line"
+         x="143.55203"
+         y="698.62952"
+         id="tspan2837"
+         style="stroke:#009b00;stroke-width:0.68959713;stroke-opacity:1">prim</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.24334908px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#009900;fill-opacity:1;stroke:none;font-family:Berlin Sans FB;-inkscape-font-specification:Berlin Sans FB"
+       x="241.9863"
+       y="644.98956"
+       id="text2845"
+       sodipodi:linespacing="125%"
+       transform="scale(0.91748018,1.0899418)"
+       inkscape:export-filename="W:\DropBox\Dropbox\grafos\grafo\img\agmkruskal.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2847"
+         x="241.9863"
+         y="644.98956"
+         style="font-size:16.24334908px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#009900;fill-opacity:1;stroke:none;font-family:Berlin Sans FB;-inkscape-font-specification:Berlin Sans FB">kruskal</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3629"
+       y="631.00214"
+       x="249.65651"
+       style="font-size:16.24334908px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#009b00;fill-opacity:1;stroke:none;font-family:Berlin Sans FB;-inkscape-font-specification:Berlin Sans FB"
+       xml:space="preserve"
+       transform="scale(0.91748018,1.0899418)"
+       inkscape:export-filename="W:\DropBox\Dropbox\grafos\grafo\img\agmkruskal.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         y="631.00214"
+         x="249.65651"
+         id="tspan3631"
+         sodipodi:role="line"
+         style="fill:#009b00;fill-opacity:1;stroke:none">agm</tspan><tspan
+         id="tspan3633"
+         y="651.30634"
+         x="249.65651"
+         sodipodi:role="line"
+         style="fill:#009b00;fill-opacity:1;stroke:none" /></text>
+    <text
+       transform="scale(0.9685957,1.0324225)"
+       xml:space="preserve"
+       style="font-size:13.69105816px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#00cd00;fill-opacity:1;stroke:#009b00;stroke-width:0.76061428;stroke-opacity:1;font-family:Berlin Sans FB;-inkscape-font-specification:Berlin Sans FB"
+       x="144.66692"
+       y="676.18408"
+       id="text3635"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="W:\DropBox\Dropbox\grafos\grafo\img\agmprim.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         style="stroke-width:0.76061428"
+         sodipodi:role="line"
+         id="tspan3637"
+         x="144.66692"
+         y="676.18408">agm</tspan><tspan
+         style="stroke-width:0.76061428"
+         sodipodi:role="line"
+         x="144.66692"
+         y="693.29791"
+         id="tspan3639" /></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3629-1"
+       y="621.20514"
+       x="195.84596"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#009b00;fill-opacity:1;stroke:none;font-family:Berlin Sans FB;-inkscape-font-specification:Berlin Sans FB"
+       xml:space="preserve"
+       transform="scale(0.91748018,1.0899418)"
+       inkscape:export-filename="W:\DropBox\Dropbox\grafos\grafo\img\agmprim.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         y="621.20514"
+         x="195.84596"
+         id="tspan3631-7"
+         sodipodi:role="line"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#009b00;fill-opacity:1;stroke:none;font-family:Berlin Sans FB;-inkscape-font-specification:Berlin Sans FB">agm</tspan><tspan
+         id="tspan3633-4"
+         y="637.20514"
+         x="195.84596"
+         sodipodi:role="line"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#009b00;fill-opacity:1;stroke:none;font-family:Berlin Sans FB;-inkscape-font-specification:Berlin Sans FB" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#009c00;fill-opacity:1;stroke:none;font-family:Berlin Sans FB;-inkscape-font-specification:Berlin Sans FB"
+       x="182.28133"
+       y="662.07288"
+       id="text2833-0"
+       sodipodi:linespacing="100%"
+       transform="scale(0.98317,1.0171181)"
+       inkscape:export-filename="W:\DropBox\Dropbox\grafos\grafo\img\agmprim.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2835-9"
+         x="182.28133"
+         y="662.07288"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#009c00;fill-opacity:1;stroke:none;font-family:Berlin Sans FB;-inkscape-font-specification:Berlin Sans FB" /><tspan
+         sodipodi:role="line"
+         x="182.28133"
+         y="678.07288"
+         id="tspan2837-4"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#009c00;fill-opacity:1;stroke:none;font-family:Berlin Sans FB;-inkscape-font-specification:Berlin Sans FB">prim</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:31.12124252px;font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#bc2122;fill-opacity:1;stroke:none;font-family:DejaVu Sans Light;-inkscape-font-specification:'DejaVu Sans Light, Ultra-Light'"
+       x="371.15411"
+       y="649.42102"
+       id="text2868"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="W:\DropBox\Dropbox\grafos\grafo\img\cor.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2870"
+         x="371.15411"
+         y="649.42102">c</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:31.12124252px;font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#3e8213;fill-opacity:1;stroke:none;font-family:DejaVu Sans Light;-inkscape-font-specification:'DejaVu Sans Light, Ultra-Light'"
+       x="387.22977"
+       y="649.34631"
+       id="text2872"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="W:\DropBox\Dropbox\grafos\grafo\img\cor.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2874"
+         x="387.22977"
+         y="649.34631">o</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:31.12124252px;font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#3139ae;fill-opacity:1;stroke:none;font-family:DejaVu Sans Light;-inkscape-font-specification:'DejaVu Sans Light, Ultra-Light'"
+       x="405.51697"
+       y="649.86224"
+       id="text2876"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="W:\DropBox\Dropbox\grafos\grafo\img\cor.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2878"
+         x="405.51697"
+         y="649.86224">r</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14.89320087px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#009900;fill-opacity:1;stroke:none;font-family:DejaVu Sans Condensed;-inkscape-font-specification:'DejaVu Sans Condensed,'"
+       x="371.76285"
+       y="602.63293"
+       id="text2862"
+       sodipodi:linespacing="100%"
+       transform="scale(0.83797937,1.1933468)"
+       inkscape:export-filename="W:\DropBox\Dropbox\grafos\grafo\img\dijkstra.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2864"
+         x="371.76285"
+         y="602.63293">dijkstra</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.2064867px;font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#009b00;fill-opacity:1;stroke:none;font-family:DejaVu Sans Condensed;-inkscape-font-specification:DejaVu Sans Condensed"
+       x="415.47421"
+       y="569.94196"
+       id="text3640"
+       sodipodi:linespacing="100%"
+       transform="scale(0.75865011,1.3181307)"
+       inkscape:export-filename="W:\DropBox\Dropbox\grafos\grafo\img\bellman.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3642"
+         x="415.47421"
+         y="569.94196">bellman</tspan></text>
+  </g>
+</svg>
