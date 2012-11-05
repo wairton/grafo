@@ -8,6 +8,10 @@ import json
 
 from desenhaGrafo import DesenhaGrafo
 
+common_config = {
+	'bg' : '#e6e6e6',
+	'borderwidth' : 0
+}
 
 class MainWindow(object):
 	"""
@@ -25,95 +29,55 @@ class MainWindow(object):
 		self.modificado = False
 
 		#menu principal
-		self.frameMenu = Frame(raiz, borderwidth = 2, relief = GROOVE)
+		self.frameMenu = Frame(raiz)
 		self.frameMenu.pack(fill=X, expand=True)
 
+		self.menu = Menu(self.frameMenu, **common_config)
+		self.raiz.config(menu=self.menu)
 		
-		self.menu = Menu(self.frameMenu)
-		self.raiz.config(menu = self.menu)
-		
-		self.menuArquivo = Menu(self.menu)
+		self.menuArquivo = Menu(self.menu, **common_config)
 		self.menu.add_cascade(label="Arquivo", menu=self.menuArquivo)
 		self.menuArquivo.add_command(label="Novo", command=self.novo)
 		self.menuArquivo.add_command(label="Carregar", command=self.carregar)
 		self.menuArquivo.add_command(label="Salvar", command=self.salvar)
 		self.menuArquivo.add_command(label="Sair", command=self.sair)
-
-		self.menuConfiguracao = Menu(self.menu)
+		#menu configuração
+		self.menuConfiguracao = Menu(self.menu, **common_config)
 		self.menu.add_cascade(label="Configurar", menu=self.menuConfiguracao)
 		self.menuConfiguracao.add_command(label='Prefer\xc3\xaancias', command=self.configurarAparencia)
-		#self.menuArquivo.add_command(label="Carregar", command=self.carregar)
-		#self.menuArquivo.add_command(label="Salvar", command=self.salvar)
-		#self.menuArquivo.add_command(label="Sair", command=self.sair)"""
-
 		#barra de opções
-		self.frameOpcoes = Frame(raiz, borderwidth = 2)
+		self.frameOpcoes = Frame(raiz, **common_config)
+		foo = Label(self.frameOpcoes, text=" " * 50, **common_config).grid(row=0, column=0)
 		self.checaLabel = IntVar()
-		Checkbutton(self.frameOpcoes, text="Label", variable=self.checaLabel).pack(side=LEFT)
+		Checkbutton(self.frameOpcoes, text="Label", variable=self.checaLabel, **common_config).grid(row=0, column=1)
 		self.checaPeso = IntVar()
-		Checkbutton(self.frameOpcoes, text="Pesos", variable=self.checaPeso).pack(side=LEFT)
+		Checkbutton(self.frameOpcoes, text="Pesos", variable=self.checaPeso, **common_config).grid(row=0, column=2)
 		self.checaDirecionado = IntVar()
-		Checkbutton(self.frameOpcoes, text="Direcionado", variable=self.checaDirecionado).pack()
-		self.frameOpcoes.pack()
-		
+		Checkbutton(self.frameOpcoes, text="Direcionado", variable=self.checaDirecionado, **common_config).grid(row=0, column=3)
+		self.frameOpcoes.pack(fill=BOTH, expand=True)
 		#barra de atalhos
-		self.frameAcoes = Frame(raiz)
-		self.imVertice = PhotoImage(file = os.path.join(os.getcwd(),"img","vertice.gif"))
-		self.imAresta = PhotoImage(file = os.path.join(os.getcwd(),"img","aresta.gif"))
-		self.imMover = PhotoImage(file = os.path.join(os.getcwd(),"img","mover.gif"))
-		self.imRemover = PhotoImage(file = os.path.join(os.getcwd(),"img","remover.gif"))
-		self.imBfs = PhotoImage(file = os.path.join(os.getcwd(),"img","bfs.gif"))
-		self.imDfs = PhotoImage(file = os.path.join(os.getcwd(),"img","dfs.gif"))
-		self.imSmile = PhotoImage(file = os.path.join(os.getcwd(),"img","smile.gif"))
-		self.imDijkstra = PhotoImage(file = os.path.join(os.getcwd(),"img","dijkstra.gif"))
-		self.imBellman = PhotoImage(file = os.path.join(os.getcwd(),"img","bellman.gif"))
-		self.imExclama = PhotoImage(file = os.path.join(os.getcwd(),"img","exclama.gif"))
-		self.imPrim = PhotoImage(file = os.path.join(os.getcwd(),"img","agmprim.gif"))
-		self.imKruskal = PhotoImage(file = os.path.join(os.getcwd(),"img","agmkruskal.gif"))
-		self.imCor = PhotoImage(file = os.path.join(os.getcwd(),"img","cor.gif"))
-		
-		self.buttons = []
-		self.buttons.append(Button(self.frameAcoes, width=50, height=50, image=self.imVertice, justify=LEFT, command=lambda:self.atualizaEstado(0)))
-		self.buttons[0].grid(row=0, column=0)
-
-		self.buttons.append(Button(self.frameAcoes, width=50, height=50,image=self.imAresta, justify=LEFT,command=lambda:self.atualizaEstado(1)))
-		self.buttons[1].grid(row=0, column=1)
-
-		self.buttons.append(Button(self.frameAcoes, width=50, height=50,image=self.imMover, justify=LEFT, command=lambda:self.atualizaEstado(2)))
-		self.buttons[2].grid(row=0, column=2)
-
-		self.buttons.append(Button(self.frameAcoes, width=50, height=50, image=self.imRemover, justify=LEFT, command=lambda:self.atualizaEstado(3)))
-		self.buttons[3].grid(row=0, column=3)		
-				
-		self.buttons.append(Button(self.frameAcoes, width=50, height=50, image=self.imBfs, justify=LEFT, command=lambda:self.atualizaEstado(4)))
-		self.buttons[4].grid(row=0, column=4)	
-		
-		self.buttons.append(Button(self.frameAcoes, width=50, height=50, image=self.imDfs, justify=LEFT, command=lambda:self.atualizaEstado(5)))
-		self.buttons[5].grid(row=0, column=5)
-		
-		self.buttons.append(Button(self.frameAcoes, width=50, height=50, image=self.imDijkstra, justify=LEFT, command=lambda:self.atualizaEstado(6)))
-		self.buttons[6].grid(row=0, column=6)
-		
-		self.buttons.append(Button(self.frameAcoes, width=50, height=50, image=self.imBellman, justify=LEFT, command=lambda:self.atualizaEstado(7)))
-		self.buttons[7].grid(row=0, column=7)
-
-		self.buttons.append(Button(self.frameAcoes, width=50, height=50, image=self.imPrim, justify=LEFT, command=lambda:self.atualizaEstado(8)))
-		self.buttons[8].grid(row=0, column=8)
-
-		self.buttons.append(Button(self.frameAcoes, width=50, height=50, image=self.imKruskal, justify=LEFT, command=lambda:self.atualizaEstado(9)))
-		self.buttons[9].grid(row=0, column=9)		
-		
-		self.buttons.append(Button(self.frameAcoes, width=50, height=50, image=self.imCor, justify=LEFT, command=lambda:self.atualizaEstado(10)))
-		self.buttons[10].grid(row=0, column=10)	
+		self.frameAcoes = Frame(raiz, **common_config)
+		images_names = ["vertice.gif", "aresta.gif", "mover.gif",
+						"remover.gif", "bfs.gif", "dfs.gif", "smile.gif",
+						"dijkstra.gif", "bellman.gif", "exclama.gif",
+						"agmprim.gif", "agmkruskal.gif", "cor.gif"]
+		self.images = [PhotoImage(file=os.path.join(os.getcwd(),"img", img)) for img in images_names]
+		button_common_config = common_config.copy()
+		button_common_config['width'] = 50
+		button_common_config['height'] = 50
+		button_common_config['justify'] = LEFT
+		button_common_config['borderwidth'] = 1
+		self.buttons = [Button(self.frameAcoes, image=image,
+						**button_common_config) for i, image in enumerate(self.images)]
+		for i, button in enumerate(self.buttons):
+			button.config(command=lambda i=i: self.atualizaEstado(i))
+			button.grid(row=0, column=i)
 		self.frameAcoes.pack()
-	
 		#Canvas
-		self.frameCanvas = Frame(raiz, borderwidth = 2)
-		self.frameCanvas.pack()		
-
+		self.frameCanvas = Frame(raiz, **common_config)
 		self.canvas = Canvas(self.frameCanvas,  height=480, width = 720, highlightthickness=2)
 		self.canvas.pack()
-
+		self.frameCanvas.pack()
 		#bindings
 		self.canvas.bind("<Button-1>", self.checaclick)
 		self.canvas.bind("<Motion>",self.atualizaPos)
@@ -121,17 +85,14 @@ class MainWindow(object):
 		self.raiz.bind_all("<Right>", lambda foo:self.atualizaPos(foo, (8,0)))
 		self.raiz.bind_all("<Down>", lambda foo:self.atualizaPos(foo, (0,8)))
 		self.raiz.bind_all("<Left>", lambda foo:self.atualizaPos(foo, (-8,0)))
-		
 		#desenhar grafo
 		#ponto de conexão entre as camadas GUI e Desenho.
 		self.desenho = DesenhaGrafo(self.canvas, self.opcoes)
-		
-	
+
 	def opcoes(self):
 		"""Método para ser usado como callback para obter o valor das opcoes(peso, label)"""
 		return self.checaPeso.get(), self.checaDirecionado.get(), self.checaLabel.get()
-		
-	
+
 	def obterInformacao(self, evento, mensagem):
 		"""Chama a classe CaixaEntrada."""
 		d = CaixaEntrada(self.raiz, evento, mensagem)
@@ -146,7 +107,6 @@ class MainWindow(object):
 				self.desenho.desenhaGrafo()					
 			elif direcao != None:
 				self.desenho.moverTodos(direcao)
-
 		
 	def checaclick(self, evento):
 		"""Método que trata da interação com o mouse."""
@@ -198,8 +158,7 @@ class MainWindow(object):
 		elif self.status == 10:
 			self.colorir(evento)
 		self.modificado = True
-	
-		
+
 	def buscaProfundidade(self, evento):
 		"""Chama a busca em profundidade da classe Desenho."""
 		self.desenho.buscaProfundidade((evento.x, evento.y))
@@ -219,15 +178,15 @@ class MainWindow(object):
 	def minDijkstra(self, origem, destino):
 		"""Chama a Dijkstra da classe Desenho."""
 		self.desenho.minDijkstra(origem, destino)
-		
+
 	def minBellman(self, origem, destino):
 		"""Chama a Bellman-Ford da classe Desenho."""
 		self.desenho.minBellman(origem, destino)
-	
+
 	def colorir(self,evento):
 		"""Chama o método de coloração de grafos da classe Desenho."""
 		self.desenho.colorir()
-		
+	
 	def atualizaEstado(self,valor):
 		"""Coordena o estado dos botões."""
 		if self.status != -1:
@@ -237,7 +196,7 @@ class MainWindow(object):
 			self.status = valor
 		else:
 			self.status = -1	
-		
+
 	def carregar(self):
 		"""Diálogo de abertura de arquivo."""
 		arquivo = fDialog.askopenfile(parent=self.raiz,filetypes=[('grafo','*.grafo')],title='Carregar...')
@@ -319,11 +278,6 @@ class CaixaEntrada:
 	def get(self):
 		return self.value
 
-
-"""    def color(self):
-        rgb, hx = tkColorChooser.askcolor("white")
-        print rgb, hx
-        self.parent.config(bg=hx)"""
 
 class JanelaConfiguracao:
 	def __init__ (self, raiz):
