@@ -1,7 +1,8 @@
-#-*-coding:utf-8-*-
+# -*-coding:utf-8-*-
 import math
 
-class Reta():
+
+class Reta(object):
     """
     Representa um segmento de reta que chamamos de reta \o/.
     y = mx + n
@@ -10,50 +11,47 @@ class Reta():
         """'coord' representa dois pontos utilizados na definição da reta."""
         self.xa, self.ya, self.xb, self.yb = coord
 
-    def coeAngular(self):
+    def coeficiente_angular(self):
         """Retorna o coeficiente angular da reta."""
         if(self.xa == self.xb):
             return 10E-8
         m = float(self.yb - self.ya) / float(self.xb - self.xa)
         return m
 
-    def coeLinear(self):
+    def coeficiente_linear(self):
         """Retorna o coeficiente linear da reta."""
-        n = (self.ya - self.coeAngular() * self.xa)
+        n = (self.ya - self.coeficiente_angular() * self.xa)
         return n
 
-    def _checaPonto(self,coord):
+    def checa_ponto(self, coord):
         """Checa se um ponto esta contido na reta"""
-        x,y = coord
-        m = self.coeAngular()
-        n = self.coeLinear()
-        value = m*x + n
-        print "value",value,"y",y
+        x, y = coord
+        m = self.coeficiente_angular()
+        n = self.coeficiente_linear()
+        value = m * x + n
         if math.fabs(y - value) <= 3 + 10E-3:
             return True
         return False
 
-    def checaInter(self,retaB):
-        """Checa se há cruzamento entre os dois segmentos de reta. 'self' e 'retaB'"""
+    def checaInter(self, outra_reta):
+        """
+        Checa se há cruzamento entre 'self' e 'outra_reta'.
+        """
+        ma = self.coeficiente_angular()
+        mb = outra_reta.coeficiente_angular()
+        na = self.coeficiente_linear()
+        nb = outra_reta.coeficiente_linear()
 
-        ma = self.coeAngular()
-        mb = retaB.coeAngular()
-        na = self.coeLinear()
-        nb = retaB.coeLinear()
-
-        #checa se exite cruzamento entra as duas retas
         if math.fabs(ma - mb) <= 10E-9:
             return False
-
-        #calcula o ponto em comun
-        if retaB.xa == retaB.xb:
-            xc = retaB.xa
+        if outra_reta.xa == outra_reta.xb:
+            xc = outra_reta.xa
         else:
-            xc = - (float(na - nb) / float (ma - mb))
-        yc = na + ma*xc
+            xc = -(float(na - nb) / float(ma - mb))
+        yc = na + ma * xc
 
-        #checa se o ponto esta no segmento
-        if (self.xa - xc)*(xc - self.xb) >= 0 and (retaB.xa- xc) * (xc - retaB.xb) >= 0:
-            if (self.ya - yc)*(yc - self.yb) >= 0 and (retaB.ya- yc) *(yc - retaB.yb) >= 0:
+        # checa se o ponto esta no segmento
+        if (self.xa - xc)*(xc - self.xb) >= 0 and (outra_reta.xa- xc) * (xc - outra_reta.xb) >= 0:
+            if (self.ya - yc)*(yc - self.yb) >= 0 and (outra_reta.ya- yc) *(yc - outra_reta.yb) >= 0:
                 return True
         return False
