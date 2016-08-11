@@ -1,4 +1,4 @@
-#-*-coding:utf-8 -*-
+# -*-coding:utf-8 -*-
 from grafo import Grafo
 from reta import Reta
 import math, time, random
