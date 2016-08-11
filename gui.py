@@ -1,17 +1,19 @@
-#-*-coding: utf-8-*-
+# -*-coding: utf-8-*-
+import os
+import json
+
 from Tkinter import *
 import tkFileDialog as fDialog
 from tkMessageBox import askquestion, showwarning
 
-import os
-import json
+from desenha_grafo import DesenhaGrafo
 
-from desenhaGrafo import DesenhaGrafo
 
 common_config = {
     'bg' : '#e6e6e6',
     'borderwidth' : 0
 }
+
 
 class MainWindow(object):
     """

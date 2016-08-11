@@ -344,5 +344,4 @@ class DesenhaGrafo():
             self.vertices.append((int(info[indice]), int(info[indice+1])))
             indice += 2
         self.grafo.carregar(info[2 * nvertices + 1:])
-        #print self.vertices
         self.desenhaGrafo()

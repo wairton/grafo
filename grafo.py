@@ -1,7 +1,8 @@
-#-*-coding:utf-8-*-
-import configuracao as cfg
+# -*-coding:utf-8-*-
 from heapMin import HeapMin
-from listOrd import ListOrd
+
+import configuracao as cfg
+from list_ord import ListOrd
 
 
 class Grafo(object):
