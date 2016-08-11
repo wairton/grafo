@@ -59,9 +59,8 @@ class MainWindow(object):
         self.frameOpcoes.pack(fill=BOTH, expand=True)
         #barra de atalhos
         self.frameAcoes = Frame(raiz, **common_config)
-        images_names = ["vertice.gif", "aresta.gif", "mover.gif",
-                        "remover.gif", "bfs.gif", "dfs.gif", "smile.gif",
-                        "dijkstra.gif", "bellman.gif", "exclama.gif",
+        images_names = ["vertice.gif", "aresta.gif", "mover.gif", "remover.gif",
+                        "bfs.gif", "dfs.gif", "dijkstra.gif", "bellman.gif",
                         "agmprim.gif", "agmkruskal.gif", "cor.gif"]
         self.images = [PhotoImage(file=os.path.join(os.getcwd(),"img", img)) for img in images_names]
         button_common_config = common_config.copy()
