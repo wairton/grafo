@@ -198,6 +198,7 @@ class MainWindow(object):
             self.status = valor
         else:
             self.status = -1
+        print '@', self.status
 
     def carregar(self):
         """Diálogo de abertura de arquivo."""

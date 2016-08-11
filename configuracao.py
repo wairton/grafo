@@ -1,6 +1,8 @@
+import sys
+
 TAM_VERTICE = 22	#raio do vertice
 
-HIGH_VALUE = 999999
+HIGH_VALUE = sys.maxint
 
 COR_TELA = "#323E3E"#"#283232"#"#FFB473"#"#E6E6E6" #
 COR_TEXTO1 = "#FFFFFF"

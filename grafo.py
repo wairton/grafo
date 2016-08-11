@@ -1,5 +1,5 @@
 # -*-coding:utf-8-*-
-from heapMin import HeapMin
+from heapMin import HeapMin, DijkstraNode
 
 import configuracao as cfg
 from list_ord import ListOrd
@@ -57,7 +57,7 @@ class Grafo(object):
         """imprimi grafo no terminal"""
         for i in range(len(self.matriz)):
             print i,':',
-            self.matriz[i]._print()
+            print self.matriz[i]
             print
 
     def info(self):
@@ -225,45 +225,37 @@ class Grafo(object):
         print agm
         return agm
 
-    def minDijkstra(self,sour,dest):
+    def minDijkstra(self,source,destination):
         """Implentacao do algoritmo de Dijkstra"""
         print "Dijkstra"
-        #atribuicoes inicias
-
         distHeap = HeapMin()
-        distHeap.inserir((sour,cfg.HIGH_VALUE))
-
+        distHeap.inserir(DijkstraNode(cfg.HIGH_VALUE, source))
 
         dist = [cfg.HIGH_VALUE for x in range(len(self.matriz))] #vetor para acessar de modo direto as distancias
-        dist[sour] = 0
+        dist[source] = 0
 
         pred = [-1 for x in range(len(self.matriz))] # lista dos predecessores de cada vertice
-
         marcados = [-1  for x in range(len(self.matriz))]
-
-        #inicio do algoritmo
-
-        while distHeap.heapLen() > 0:
-            u,p = distHeap.remover()
+        # inicio do algoritmo
+        while len(distHeap) > 0:
+            p,u = distHeap.remover()
             for v,p in self.matriz[u]:
                 if dist[v] > dist[u] + p:
-                        dist[v] = dist[u] + p
-                        if marcados[v] == -1:
-                            distHeap.inserir((v,dist[v]))
-                            marcados[v] = 1
-                        pred[v] = u
-        #usando heap in ficou O(n logn), se quiser pode melhorar usando o heap-fibonaci :)
+                    dist[v] = dist[u] + p
+                    if marcados[v] == -1:
+                        distHeap.inserir(DijkstraNode(dist[v], v))
+                        marcados[v] = 1
+                    pred[v] = u
+        # usando heap in ficou O(n logn), se quiser pode melhorar usando o heap-fibonaci :)
         for i in range(len(self.matriz)):
-            print i,' ',dist[i],' ',pred [i]
-
-        ant = pred[dest]
+            print i, ' ', dist[i], ' ', pred[i]
+        ant = pred[destination]
         ordem = []
-
-        #constrói o menor caminho de sour para dest
+        #constrói o menor caminho de source para destination
         while ant != -1:
-            ordem.append((ant,dest))
-            dest = ant
-            ant = pred[dest]
+            ordem.append((ant,destination))
+            destination = ant
+            ant = pred[destination]
         ordem.reverse()
         return ordem
 
