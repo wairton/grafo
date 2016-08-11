@@ -25,7 +25,7 @@ class ListOrd(list):
                 del self[indice]
                 tamanho -= 1
             elif indice < self[posicao][0]:
-                self[posicao] = (self[posicao][0]-1, self[posicao][1])
+                self[posicao] = (self[posicao][0] - 1, self[posicao][1])
             posicao += 1
 
     def remover(self, indice):
@@ -36,14 +36,14 @@ class ListOrd(list):
 
     def indice(self, indice):
         """Retorna a posicao do elemento indice na lista"""
-        for n in xrange(len(self)):
-            if indice == self[n][0]:
-                return n
+        for i, item in enumerate(self):
+            if item[0] == indice:
+                return i
         return None
 
     def peso(self, indice):
         """Retorna o peso do vertice indice"""
-        for n in xrange(len(self)):
-            if indice == self[n][0]:
-                return self[n][1]
+        for item in self:
+            if item[0] == indice:
+                return item[1]
         return None
