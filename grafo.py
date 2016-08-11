@@ -1,5 +1,6 @@
 # -*-coding:utf-8-*-
 import heapq
+
 import configuracao as cfg
 from list_ord import ListOrd
 
@@ -224,40 +225,32 @@ class Grafo(object):
         print agm
         return agm
 
-    def minDijkstra(self,source,destination):
+    def min_dijkstra(self, origem, destino):
         """Implentacao do algoritmo de Dijkstra"""
         print "Dijkstra"
-        from collections import namedtuple
-        DijkstraNode = namedtuple('DijkstraNode', ['distance', 'label'])
-
         heap = []
-        heapq.heappush(heap, DijkstraNode(cfg.HIGH_VALUE, source))
-
-        dist = [cfg.HIGH_VALUE for x in range(len(self.matriz))] #vetor para acessar de modo direto as distancias
-        dist[source] = 0
-
-        pred = [-1 for x in range(len(self.matriz))] # lista dos predecessores de cada vertice
-        marcados = [-1  for x in range(len(self.matriz))]
-        # inicio do algoritmo
+        heapq.heappush(heap, (cfg.HIGH_VALUE, origem))
+        dist = [cfg.HIGH_VALUE for _ in range(len(self.matriz))]
+        dist[origem] = 0
+        predecessores = [-1 for _ in range(len(self.matriz))]
+        marcados = [False for _ in range(len(self.matriz))]
         while len(heap) > 0:
             p,u = heapq.heappop(heap)
             for v,p in self.matriz[u]:
                 if dist[v] > dist[u] + p:
                     dist[v] = dist[u] + p
-                    if marcados[v] == -1:
-                        heapq.heappush(heap, DijkstraNode(dist[v], v))
-                        marcados[v] = 1
-                    pred[v] = u
-        # usando heap in ficou O(n logn), se quiser pode melhorar usando o heap-fibonaci :)
+                    if not marcados[v]:
+                        heapq.heappush(heap, (dist[v], v))
+                        marcados[v] = True
+                    predecessores[v] = u
         for i in range(len(self.matriz)):
-            print i, ' ', dist[i], ' ', pred[i]
-        ant = pred[destination]
+            print i, ' ', dist[i], ' ', predecessores[i]
+        predecessor = predecessores[destino]
         ordem = []
-        #constrói o menor caminho de source para destination
-        while ant != -1:
-            ordem.append((ant,destination))
-            destination = ant
-            ant = pred[destination]
+        while predecessor != -1:
+            ordem.append((predecessor,destino))
+            destino = predecessor
+            predecessor = predecessores[destino]
         ordem.reverse()
         return ordem
 

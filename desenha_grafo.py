@@ -225,7 +225,7 @@ class DesenhaGrafo():
 
     def minDijkstra(self,sour,dest):
         """Chama a o metodo de Dijkstra para menor caminho do grafo e muda o cor das arestas mostrando qual e esse caminho"""
-        ordem = self.grafo.minDijkstra(sour,dest)
+        ordem = self.grafo.min_dijkstra(sour,dest)
         print ordem
         self.selecionadas.extend(ordem)
         self.desenhaGrafo()
