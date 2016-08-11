@@ -1,6 +1,5 @@
 # -*-coding:utf-8-*-
-from heapMin import HeapMin, DijkstraNode
-
+import heapq
 import configuracao as cfg
 from list_ord import ListOrd
 
@@ -228,8 +227,11 @@ class Grafo(object):
     def minDijkstra(self,source,destination):
         """Implentacao do algoritmo de Dijkstra"""
         print "Dijkstra"
-        distHeap = HeapMin()
-        distHeap.inserir(DijkstraNode(cfg.HIGH_VALUE, source))
+        from collections import namedtuple
+        DijkstraNode = namedtuple('DijkstraNode', ['distance', 'label'])
+
+        heap = []
+        heapq.heappush(heap, DijkstraNode(cfg.HIGH_VALUE, source))
 
         dist = [cfg.HIGH_VALUE for x in range(len(self.matriz))] #vetor para acessar de modo direto as distancias
         dist[source] = 0
@@ -237,13 +239,13 @@ class Grafo(object):
         pred = [-1 for x in range(len(self.matriz))] # lista dos predecessores de cada vertice
         marcados = [-1  for x in range(len(self.matriz))]
         # inicio do algoritmo
-        while len(distHeap) > 0:
-            p,u = distHeap.remover()
+        while len(heap) > 0:
+            p,u = heapq.heappop(heap)
             for v,p in self.matriz[u]:
                 if dist[v] > dist[u] + p:
                     dist[v] = dist[u] + p
                     if marcados[v] == -1:
-                        distHeap.inserir(DijkstraNode(dist[v], v))
+                        heapq.heappush(heap, DijkstraNode(dist[v], v))
                         marcados[v] = 1
                     pred[v] = u
         # usando heap in ficou O(n logn), se quiser pode melhorar usando o heap-fibonaci :)
